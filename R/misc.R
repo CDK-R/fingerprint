@@ -206,7 +206,7 @@ setMethod("distance", c("fingerprint", "fingerprint", "character", "missing", "m
               dist <- (c*d-a*b)/sqrt((a+c)*(b+c)*(a+d)*(b+d))
             } else if (method == 'dispersion') {
               dist <- (c*d-a*b)/n^2
-            } else if (method == 'mcconaughey') {
+            } else if (method == 'mcconnaughey') {
               dist <- (c^2-a*b)/((a+c)*(b+c))
             } else if (method == 'stiles') {
               dist <- log10(n*(abs(c*d-a*b)-n/2)^2/((a+c)*(b+c)*(a+d)*(b+d)))
