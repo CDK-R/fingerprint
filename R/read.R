@@ -7,12 +7,13 @@ jchem.binary.lf <- function(line) {
 
 fps.lf <- function(line) {
   toks <- strsplit(line, "\\s")[[1]];
+  title <- paste(toks[2:length(toks)], collapse=' ', sep='')
   bitpos <- .Call("parse_hex", as.character(toks[1]), as.integer(nchar(toks[1])))
   if (is.null(bitpos)) return(NULL)
   if (length(toks) > 2) {
     misc <- list(toks[-c(1,2)])
   } else { misc <- list() }
-  list(toks[2], bitpos+1, misc) ## we add 1, since C does bit positions from 0
+  list(title, bitpos+1, misc) ## we add 1, since C does bit positions from 0
 }
 
 cdk.lf <- function(line) {
