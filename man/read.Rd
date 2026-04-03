@@ -35,7 +35,7 @@ fp.read.to.matrix(f='fingerprint.txt', size=1024, lf=cdk.lf, header=FALSE)
     a fingerprint file. A number of functions are provided
     that parse the fingerprints from the output of the CDK, MOE and the
     BCI toolkit. In addition, support is now available for the FPS format
-    from the chemfp project (\url{http://code.google.com/p/chem-fingerprints}).
+    from the chemfp project (\url{https://code.google.com/archive/p/chem-fingerprints}).
   }
   \item{header}{
     Indicates whether the first line of the fingerprint file is
