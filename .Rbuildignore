@@ -1,3 +1,4 @@
 ^CRAN-SUBMISSION$
 ^cran-comments\.md$
-.git
+^\.git$
+^\.\.[^/]*Rcheck$
