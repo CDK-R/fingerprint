@@ -27,4 +27,7 @@ Description: Functions to manipulate binary fingerprints
 License: GPL | file LICENSE
 Depends: methods
 LazyLoad: yes
-Suggests: RUnit
+Suggests: 
+    RUnit,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
