@@ -11,8 +11,6 @@ Authors@R: c(
            family = "Charlop-Powers",
            role = c("cre"),
            email = "zach.charlop.powers@gmail.com"))
-Author: Rajarshi Guha <rajarshi.guha@gmail.com>
-Maintainer: Zach Charlop-Powers <zach.charlop.powers@gmail.com>
 BugReports: https://github.com/CDK-R/cdkr/issues
 Description: Functions to manipulate binary fingerprints
  of arbitrary length. A fingerprint is represented by an object of S4 class 'fingerprint'
