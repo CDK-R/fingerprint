@@ -5,7 +5,7 @@
 }
 \description{
 The idea of comparing datasets using fingerprints was described in
-Guha \& Schurer (2008). The idea is that one can summarize the dataset
+Guha & Schurer (2008). The idea is that one can summarize the dataset
 by counting the frequency of occurrence of each bit position. The
 frequency is normalized by the number of fingerprints considered. Thus a
 collection of N fingerprints can be converted to a single vector of

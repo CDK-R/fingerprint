@@ -2,6 +2,10 @@ Package: fingerprint
 Version: 3.5.9
 Date: 2022-10-16
 Title: Functions to Operate on Binary Fingerprint Data
+Authors@R: person(given = "Rajarshi",
+                  family = "Guha",
+                  role = c("aut", "cre"),
+                  email = "rajarshi.guha@gmail.com")
 Author: Rajarshi Guha <rajarshi.guha@gmail.com>
 Maintainer: Rajarshi Guha <rajarshi.guha@gmail.com>
 BugReports: https://github.com/rajarshi/cdkr/issues
