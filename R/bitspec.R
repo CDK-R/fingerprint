@@ -1,6 +1,6 @@
 bit.spectrum <- function(fplist) {
-  if (class(fplist) != 'list') stop("Must provide a list of fingerprint objects")
-  if (any(unlist(lapply(fplist, class)) != 'fingerprint'))
+  if (!is.list(fplist)) stop("Must provide a list of fingerprint objects")
+  if (any(!unlist(lapply(fplist, inherits, "fingerprint"))))
     stop("Must provide a list of fingerprint objects");
   nbit <- length(fplist[[1]])
   spec <- numeric(nbit)
@@ -12,8 +12,8 @@ bit.spectrum <- function(fplist) {
 }
 
 shannon <- function(fplist) {
-  if (class(fplist) != 'list') stop("Must provide a list of fingerprint objects")
-  if (any(unlist(lapply(fplist, class)) != 'fingerprint'))
+  if (!is.list(fplist)) stop("Must provide a list of fingerprint objects")
+  if (any(!unlist(lapply(fplist, inherits, "fingerprint"))))
     stop("Must provide a list of fingerprint objects");
 
   bs <- bit.spectrum(fplist)

@@ -43,7 +43,7 @@ setMethod("length", "fingerprint",
 
 parseCall <- function (obj) 
 {
-    if (class(obj) != "call") {
+    if (!inherits(obj, "call")) {
         stop("Must supply a 'call' object")
     }
     srep <- deparse(obj)
